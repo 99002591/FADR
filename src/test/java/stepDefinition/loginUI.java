@@ -6,8 +6,14 @@ import cucumber.api.java.en.When;
 
 public class loginUI {
 	
-	@Given("Open the browser and Navigate to the FADR Login page")
-	public void open_the_browser_and_navigate_to_the_fadr_login_page() {
+	@Given("Open the browser")
+	public void open_the_browser() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Given("navigate to the FADR Login page")
+	public void navigate_to_the_fadr_login_page() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
@@ -24,8 +30,8 @@ public class loginUI {
 	    throw new io.cucumber.java.PendingException();
 	}
 
-	@When("Click login")
-	public void click_login() {
+	@When("Login")
+	public void login() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
@@ -35,7 +41,7 @@ public class loginUI {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
-
+/////////////////////////////////////////////////////////////////////////////////
 	@When("Enter the invalid password")
 	public void enter_the_invalid_password() {
 	    // Write code here that turns the phrase above into concrete actions
@@ -48,8 +54,8 @@ public class loginUI {
 	    throw new io.cucumber.java.PendingException();
 	}
 
-	@When("Click Login_{int}")
-	public void click_login(Integer int1) {
+	@When("Click login")
+	public void click_login() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
@@ -59,7 +65,7 @@ public class loginUI {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
-
+/////////////////////////////////////////////////////////////////////////////////
 	@When("Enter the valid email")
 	public void enter_the_valid_email() {
 	    // Write code here that turns the phrase above into concrete actions
@@ -71,13 +77,13 @@ public class loginUI {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
-
+/////////////////////////////////////////////////////////////////////////////////
 	@When("Enter the blank email")
 	public void enter_the_blank_email() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
-
+/////////////////////////////////////////////////////////////////////////////////
 	@Given("Enter valid credentials")
 	public void enter_valid_credentials() {
 	    // Write code here that turns the phrase above into concrete actions
@@ -101,7 +107,7 @@ public class loginUI {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
-
+/////////////////////////////////////////////////////////////////////////////////////
 	@When("Remember Me button is checked")
 	public void remember_me_button_is_checked() {
 	    // Write code here that turns the phrase above into concrete actions
@@ -113,7 +119,7 @@ public class loginUI {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
-
+////////////////////////////////////////////////////////////////////////////////////
 	@Given("Enter any credentials")
 	public void enter_any_credentials() {
 	    // Write code here that turns the phrase above into concrete actions
@@ -143,7 +149,7 @@ public class loginUI {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
-
+///////////////////////////////////////////////////////////////////////////////////
 	@When("Forgot password link is clicked")
 	public void forgot_password_link_is_clicked() {
 	    // Write code here that turns the phrase above into concrete actions
@@ -167,4 +173,5 @@ public class loginUI {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
+
 }
