@@ -5,13 +5,12 @@ Feature: Login with UI
 Scenario Outline: Login with incorrect credentails
 	Given Open the browser and Navigate to the FADR Login page
 	When Enter the <email>
-	And Enter the <password>
-	And Click login
+	* Enter the <password>
+	* Click login
 	Then Login fails
 	
 	Examples:
 	|email|password|
-	|valid email|valid password|
 	|invalid email|valid password|
 	|invalid email|invalid password|
 	
@@ -19,8 +18,8 @@ Scenario Outline: Login with incorrect credentails
 Scenario Outline: Login with invalid format and blank credentials
 	Given Open the browser and Navigate to the FADR Login page
 	When Enter the <email>
-	And Enter the <password>
-	And Click Login
+	* Enter the <password>
+	* Click Login_1
 	Then Cannot login
 	
 	Examples:
@@ -32,9 +31,9 @@ Scenario Outline: Login with invalid format and blank credentials
 	
 Scenario Outline:: Remember Me button
 	Given Open the browser and Navigate to the FADR Login page
-	And Enter valid credentials
+	* Enter valid credentials
 	When Remember Me button is <button>
-	And Logout
+	* Logout
 	Then Verify if username field is <username field>
 	
 	Examples:
@@ -44,12 +43,12 @@ Scenario Outline:: Remember Me button
 	
 Scenario Outline: Password masking and unmasking
 	Given Open the browser and Navigate to the FADR Login page
-	And Enter any credentials
+	* Enter any credentials
 	When Eye button is clicked <times>
 	Then Password should be <visibility>
 	
 	Examples:
-	|times|visibilities|
+	|times|visibility|
 	|once|unmasked|
 	|twice|masked|
 	
