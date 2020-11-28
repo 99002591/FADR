@@ -9,9 +9,9 @@ As Admin
   Scenario Outline: Login with incorrect credentails
   
      When Enter the <email>
-      And Enter the <password>
+      And Enter <password>
       And Login
-     Then Login fails
+     Then login unsuccesful
   
     Examples: 
       | email         | password         | 
@@ -20,13 +20,13 @@ As Admin
   
   Scenario Outline: Login with invalid format and blank credentials
   
-     When Enter the <email>
-      And Enter the <password>
-      And Click login
-     Then Cannot login
+     When Enter the <email_inv>
+      And Enter <password_inv>
+      And Login
+     Then login unsuccesful
   
     Examples: 
-      | email                  | password       | 
+      | email_inv              | password_inv   | 
       | incorrect email format | valid password | 
       | valid email            | blank password | 
       | blank email            | valid password | 
@@ -64,3 +64,5 @@ As Admin
   
      When  Contact EATON support representative link is clicked
      Then Help section dialog box opens up
+  
+  
