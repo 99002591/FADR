@@ -12,6 +12,7 @@ As Admin
       And Enter <password>
       And Login
      Then login unsuccesful
+     And  validate error message
   
     Examples: 
       | email         | password         | 
@@ -20,17 +21,18 @@ As Admin
   
   Scenario Outline: Login with invalid format and blank credentials
   
-     When Enter the <email_inv>
-      And Enter <password_inv>
+     When Enter the "<email_inv>"
+      And Enter "<password_inv>"
       And Login
      Then login unsuccesful
-  
+  	 And  validate invalid format message
+  	 
     Examples: 
       | email_inv              | password_inv   | 
       | incorrect email format | valid password | 
-      | valid email            | blank password | 
-      | blank email            | valid password | 
-      | blank email            | blank password | 
+      | valid email            || 
+      || valid password | 
+      ||                | 
   
   Scenario Outline: Remember Me button
   

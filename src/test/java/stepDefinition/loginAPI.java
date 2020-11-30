@@ -9,6 +9,7 @@ import cucumber.api.java.en.When;
 public class loginAPI {
 	 @Given("^Login end point should be available$")
 	    public void login_end_point_should_be_available() throws Throwable {
+		 System.out.println("loop 1 API");
 	        throw new PendingException();
 	    }
 
@@ -29,6 +30,11 @@ public class loginAPI {
 
 	    @And("^Make request to endpoint$")
 	    public void make_request_to_endpoint() throws Throwable {
+	        throw new PendingException();
+	    }
+	    
+	    @And("^ validate the (.+) erorr code$")
+	    public void validate_the_erorr_code(String errorcode) throws Throwable {
 	        throw new PendingException();
 	    }
 

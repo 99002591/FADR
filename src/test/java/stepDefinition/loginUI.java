@@ -93,5 +93,15 @@ public class loginUI {
     public void login() throws Throwable {
     	throw new PendingException();
     }
+    
+    @And("^validate error message$")
+    public void validate_error_message() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^validate invalid format message$")
+    public void validate_invalid_format_message() throws Throwable {
+        throw new PendingException();
+    }
 
 }
